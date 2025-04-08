@@ -1,4 +1,4 @@
-# Data Chat
+# Advanced Data Analysis (CSV)
 
 An intelligent data exploration platform that transforms how you interact with your data through natural language. Ask complex questions in plain English and get instant visualizations, insights, and analysis without writing a single line of code.
 
