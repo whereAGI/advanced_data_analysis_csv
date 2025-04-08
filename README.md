@@ -159,13 +159,6 @@ advanced_data_analysis_csv/
 └── README.md          # This file
 ```
 
-## 🔄 Continuous Integration
-
-The project uses GitHub Actions for continuous integration:
-- Automatic testing on multiple Python versions (3.8, 3.9, 3.10, 3.11)
-- Test coverage reporting
-- Triggered on push to main and pull requests
-
 ## 📜 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
