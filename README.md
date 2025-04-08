@@ -29,8 +29,8 @@ An interactive data analysis application that lets you chat with your data using
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/data_chat.git
-cd data_chat
+git clone https://github.com/whereAGI/advanced_data_analysis_csv.git
+cd advanced_data_analysis_csv
 ```
 
 2. Install the required packages:
@@ -38,10 +38,12 @@ cd data_chat
 pip install -r requirements.txt
 ```
 
-3. Create a `.env` file in the project root with your API keys:
-```
-GROQ_API_KEY=your_groq_api_key_here
-```
+3. (Optional) Set API key through environment:
+   - Create a `.env` file in the project root:
+   ```
+   GROQ_API_KEY=your_groq_api_key_here
+   ```
+   - Or, set up the API key through the Settings page (recommended)
 
 ## Usage
 
@@ -52,10 +54,29 @@ streamlit run app.py
 
 2. Go to the Settings page to:
    - Upload your CSV data
-   - Set your API key
+   - Set your API key (in the API Settings tab)
+   - Choose your preferred model
    - Add schema context
 
 3. Visit the Chat page to start asking questions about your data
+
+## Setting Up API Access
+
+This application requires an API key from Groq to function. You have two options for setting up your API key:
+
+### Option 1: Settings Page (Recommended)
+1. Launch the application with `streamlit run app.py`
+2. Navigate to the Settings page
+3. In the "API Settings" tab, enter your Groq API key in the password field
+4. Click "Save Settings" to store your key securely
+5. Your key will be stored in your user directory and loaded automatically in future sessions
+
+### Option 2: Environment File
+1. Create a file named `.env` in the project root directory
+2. Add your Groq API key: `GROQ_API_KEY=your_key_here`
+3. The application will automatically load this key when it starts
+
+**Note**: When both options are used, the key from the Settings page takes precedence.
 
 ## Example Queries
 
@@ -86,7 +107,7 @@ python -m pytest tests/ --cov=src/ --cov-report=term
 ## Project Structure
 
 ```
-data_chat/
+advanced_data_analysis_csv/
 ├── app.py              # Main Streamlit application entry point
 ├── pages/
 │   ├── 1_Settings.py   # Settings page for configuration
@@ -102,7 +123,7 @@ data_chat/
 ├── .github/
 │   └── workflows/
 │       └── python-tests.yml    # GitHub Actions workflow
-├── .env                # Environment variables (not in repository)
+├── .env                # Environment variables (optional, not in repository)
 ├── requirements.txt    # Python dependencies
 ├── pytest.ini         # pytest configuration
 └── README.md          # This file

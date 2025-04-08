@@ -28,8 +28,9 @@ def main():
     
     1. Go to the **⚙️ Settings** page to:
        - Upload your CSV data
-       - Set your API key
-       - Add schema context
+       - Set your API key in the API Settings tab
+       - Choose your preferred model
+       - Add schema context (optional)
        
     2. Then visit the **💬 Chat** page to:
        - Ask questions about your data
