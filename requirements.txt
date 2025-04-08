@@ -1,0 +1,13 @@
+streamlit>=1.30.0
+pandas>=1.5.3
+python-dotenv>=1.0.0
+tabulate>=0.9.0
+plotly>=5.18.0
+# pandasai==1.5.8
+pandasai>=2.0.0  # Using newer version that doesn't require duckdb
+# Additional, for specific functionality
+# openai>=0.27.0  # if using OpenAI
+# google-generativeai>=0.3.0  # if using Google
+# Keeping langchain-groq for now as fallback
+langchain-groq
+requests>=2.31.0
